@@ -6,6 +6,15 @@ import { Search01Icon } from 'hugeicons-react'
 
 const HomePage = () => {
 
+  const handleClick = () => {
+    console.log("click me on start")
+  }
+
+  const handleClick2 = () => {
+    console.log("click me on press")
+
+  }
+
   return (
     <section className='py-10'>
       <div className='container mx-auto'>
@@ -15,7 +24,7 @@ const HomePage = () => {
           <div className='pt-10'>
             <h2 className='text-4xl'>icon buttons</h2>
             <div className="flex gap-4 pt-5">
-              <Button size='lg' isIconOnly><Search01Icon size={20} /></Button>
+              <Button onPressStart={handleClick} onPress={handleClick2} size='lg' isIconOnly><Search01Icon size={20} /></Button>
 
               <MyCustomButton style="primary" size='lg' isIconOnly className={"p-0"}><Search01Icon size={20} /></MyCustomButton>
               <MyCustomButton isLoading style="primary" size='lg' isIconOnly className={"p-0"}><Search01Icon size={20} /></MyCustomButton>
@@ -44,6 +53,7 @@ const HomePage = () => {
               <MyCustomButton customSize={"xs"} style="danger">Button danger</MyCustomButton>
             </div>
           </div>
+
 
         </div>
       </div>
