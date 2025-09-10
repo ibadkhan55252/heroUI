@@ -11,6 +11,7 @@ function customButton({ style = "primary", customSize = "md", className = "" }) 
     const styleVariants = {
         primary: "bg-blue-500 hover:bg-blue-600 hover:text-white-500",
         danger: "bg-red-700 hover:bg-red-900 ",
+        ghostPrimary: "bg-danger-700 hover:bg-danger-900 ",
     };
 
     // size variants
